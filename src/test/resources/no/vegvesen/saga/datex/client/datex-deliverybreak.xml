@@ -1,0 +1,9 @@
+<d2LogicalModel xmlns="http://datex2.eu/schema/2/2_0" modelBaseVersion="2">
+    <exchange>
+        <supplierIdentification>
+            <country>no</country>
+            <nationalIdentifier>Norwegian Public Roads Administration</nationalIdentifier>
+        </supplierIdentification>
+        <deliveryBreak>true</deliveryBreak>
+    </exchange>
+</d2LogicalModel>

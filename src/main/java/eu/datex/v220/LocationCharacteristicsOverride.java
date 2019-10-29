@@ -1,0 +1,120 @@
+
+package eu.datex.v220;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for LocationCharacteristicsOverride complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="LocationCharacteristicsOverride"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="measurementLanesOverride" type="{http://datex2.eu/schema/2/2_0}LaneEnum" minOccurs="0"/&gt;
+ *         &lt;element name="reversedFlow" type="{http://datex2.eu/schema/2/2_0}Boolean" minOccurs="0"/&gt;
+ *         &lt;element name="locationCharacteristicsOverrideExtension" type="{http://datex2.eu/schema/2/2_0}_ExtensionType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "LocationCharacteristicsOverride", namespace = "http://datex2.eu/schema/2/2_0", propOrder = {
+    "measurementLanesOverride",
+    "reversedFlow",
+    "locationCharacteristicsOverrideExtension"
+})
+public class LocationCharacteristicsOverride {
+
+    @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
+    @XmlSchemaType(name = "string")
+    protected LaneEnum measurementLanesOverride;
+    @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
+    protected Boolean reversedFlow;
+    @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
+    protected ExtensionType locationCharacteristicsOverrideExtension;
+
+    /**
+     * Gets the value of the measurementLanesOverride property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link LaneEnum }
+     *     
+     */
+    public LaneEnum getMeasurementLanesOverride() {
+        return measurementLanesOverride;
+    }
+
+    /**
+     * Sets the value of the measurementLanesOverride property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link LaneEnum }
+     *     
+     */
+    public void setMeasurementLanesOverride(LaneEnum value) {
+        this.measurementLanesOverride = value;
+    }
+
+    /**
+     * Gets the value of the reversedFlow property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
+     */
+    public Boolean isReversedFlow() {
+        return reversedFlow;
+    }
+
+    /**
+     * Sets the value of the reversedFlow property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
+     */
+    public void setReversedFlow(Boolean value) {
+        this.reversedFlow = value;
+    }
+
+    /**
+     * Gets the value of the locationCharacteristicsOverrideExtension property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ExtensionType }
+     *     
+     */
+    public ExtensionType getLocationCharacteristicsOverrideExtension() {
+        return locationCharacteristicsOverrideExtension;
+    }
+
+    /**
+     * Sets the value of the locationCharacteristicsOverrideExtension property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionType }
+     *     
+     */
+    public void setLocationCharacteristicsOverrideExtension(ExtensionType value) {
+        this.locationCharacteristicsOverrideExtension = value;
+    }
+
+}

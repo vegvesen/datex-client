@@ -1,0 +1,84 @@
+
+package eu.datex.v220;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for KilogramsConcentrationValue complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="KilogramsConcentrationValue"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://datex2.eu/schema/2/2_0}DataValue"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="kilogramsConcentration" type="{http://datex2.eu/schema/2/2_0}ConcentrationKilogramsPerCubicMetre"/&gt;
+ *         &lt;element name="kilogramsConcentrationValueExtension" type="{http://datex2.eu/schema/2/2_0}_ExtensionType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "KilogramsConcentrationValue", namespace = "http://datex2.eu/schema/2/2_0", propOrder = {
+    "kilogramsConcentration",
+    "kilogramsConcentrationValueExtension"
+})
+public class KilogramsConcentrationValue
+    extends DataValue
+{
+
+    @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
+    protected float kilogramsConcentration;
+    @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
+    protected ExtensionType kilogramsConcentrationValueExtension;
+
+    /**
+     * Gets the value of the kilogramsConcentration property.
+     * 
+     */
+    public float getKilogramsConcentration() {
+        return kilogramsConcentration;
+    }
+
+    /**
+     * Sets the value of the kilogramsConcentration property.
+     * 
+     */
+    public void setKilogramsConcentration(float value) {
+        this.kilogramsConcentration = value;
+    }
+
+    /**
+     * Gets the value of the kilogramsConcentrationValueExtension property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ExtensionType }
+     *     
+     */
+    public ExtensionType getKilogramsConcentrationValueExtension() {
+        return kilogramsConcentrationValueExtension;
+    }
+
+    /**
+     * Sets the value of the kilogramsConcentrationValueExtension property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionType }
+     *     
+     */
+    public void setKilogramsConcentrationValueExtension(ExtensionType value) {
+        this.kilogramsConcentrationValueExtension = value;
+    }
+
+}

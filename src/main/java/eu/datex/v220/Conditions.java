@@ -1,0 +1,99 @@
+
+package eu.datex.v220;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for Conditions complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="Conditions"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://datex2.eu/schema/2/2_0}TrafficElement"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="drivingConditionType" type="{http://datex2.eu/schema/2/2_0}DrivingConditionTypeEnum" minOccurs="0"/&gt;
+ *         &lt;element name="conditionsExtension" type="{http://datex2.eu/schema/2/2_0}_ExtensionType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "Conditions", namespace = "http://datex2.eu/schema/2/2_0", propOrder = {
+    "drivingConditionType",
+    "conditionsExtension"
+})
+@XmlSeeAlso({
+    PoorEnvironmentConditions.class,
+    RoadConditions.class
+})
+public class Conditions
+    extends TrafficElement
+{
+
+    @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
+    @XmlSchemaType(name = "string")
+    protected DrivingConditionTypeEnum drivingConditionType;
+    @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
+    protected ExtensionType conditionsExtension;
+
+    /**
+     * Gets the value of the drivingConditionType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link DrivingConditionTypeEnum }
+     *     
+     */
+    public DrivingConditionTypeEnum getDrivingConditionType() {
+        return drivingConditionType;
+    }
+
+    /**
+     * Sets the value of the drivingConditionType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DrivingConditionTypeEnum }
+     *     
+     */
+    public void setDrivingConditionType(DrivingConditionTypeEnum value) {
+        this.drivingConditionType = value;
+    }
+
+    /**
+     * Gets the value of the conditionsExtension property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ExtensionType }
+     *     
+     */
+    public ExtensionType getConditionsExtension() {
+        return conditionsExtension;
+    }
+
+    /**
+     * Sets the value of the conditionsExtension property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionType }
+     *     
+     */
+    public void setConditionsExtension(ExtensionType value) {
+        this.conditionsExtension = value;
+    }
+
+}
