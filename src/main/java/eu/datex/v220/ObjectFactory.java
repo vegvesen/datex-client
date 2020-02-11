@@ -66,6 +66,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link LinearExtensionType }
+     * 
+     */
+    public LinearExtensionType createLinearExtensionType() {
+        return new LinearExtensionType();
+    }
+
+    /**
      * Create an instance of {@link LocationContainedInItinerary }
      * 
      */
@@ -674,6 +682,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GMLLineString }
+     * 
+     */
+    public GMLLineString createGMLLineString() {
+        return new GMLLineString();
+    }
+
+    /**
      * Create an instance of {@link GrossWeightCharacteristic }
      * 
      */
@@ -855,6 +871,14 @@ public class ObjectFactory {
      */
     public LinearElementByPoints createLinearElementByPoints() {
         return new LinearElementByPoints();
+    }
+
+    /**
+     * Create an instance of {@link LinearLineStringExtension }
+     * 
+     */
+    public LinearLineStringExtension createLinearLineStringExtension() {
+        return new LinearLineStringExtension();
     }
 
     /**

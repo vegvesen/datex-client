@@ -6,6 +6,11 @@ For more information on DATEX II see https://www.datex2.eu/.
 
 [JAXB-RI v 2.3.2](https://github.com/eclipse-ee4j/jaxb-ri) is used to generate POJOs from the official [Datex II v 2.3 Schema](https://datex2.eu/schema/2/2_0/)
 
+The following command is used to generate POJOs:
+```
+./xjc.sh -no-header -p eu.datex.v220 -npa https://datex2.eu/sites/default/files/DATEXIISchema_2_2_0_0.xsd
+```
+
 The top level entity is the [D2LogicalModel](https://github.com/vegvesen/datex-client/blob/master/src/main/java/eu/datex/v220/D2LogicalModel.java). See the XML layout for an [example Datex II publication](https://github.com/vegvesen/datex-client/blob/master/src/test/resources/no/vegvesen/saga/datex/client/datex-elements.xml) 
 
 ## How can I use it?

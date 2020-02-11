@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for AbnormalTraffic complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="AbnormalTraffic"&gt;
  *   &lt;complexContent&gt;
@@ -31,8 +31,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AbnormalTraffic", namespace = "http://datex2.eu/schema/2/2_0", propOrder = {
@@ -71,11 +71,11 @@ public class AbnormalTraffic
 
     /**
      * Gets the value of the abnormalTrafficType property.
-     *
+     * 
      * @return
      *     possible object is
      *     {@link AbnormalTrafficTypeEnum }
-     *
+     *     
      */
     public AbnormalTrafficTypeEnum getAbnormalTrafficType() {
         return abnormalTrafficType;
@@ -83,11 +83,11 @@ public class AbnormalTraffic
 
     /**
      * Sets the value of the abnormalTrafficType property.
-     *
+     * 
      * @param value
      *     allowed object is
      *     {@link AbnormalTrafficTypeEnum }
-     *
+     *     
      */
     public void setAbnormalTrafficType(AbnormalTrafficTypeEnum value) {
         this.abnormalTrafficType = value;
@@ -95,11 +95,11 @@ public class AbnormalTraffic
 
     /**
      * Gets the value of the numberOfVehiclesWaiting property.
-     *
+     * 
      * @return
      *     possible object is
      *     {@link BigInteger }
-     *
+     *     
      */
     public BigInteger getNumberOfVehiclesWaiting() {
         return numberOfVehiclesWaiting;
@@ -107,11 +107,11 @@ public class AbnormalTraffic
 
     /**
      * Sets the value of the numberOfVehiclesWaiting property.
-     *
+     * 
      * @param value
      *     allowed object is
      *     {@link BigInteger }
-     *
+     *     
      */
     public void setNumberOfVehiclesWaiting(BigInteger value) {
         this.numberOfVehiclesWaiting = value;
@@ -119,11 +119,11 @@ public class AbnormalTraffic
 
     /**
      * Gets the value of the queueLength property.
-     *
+     * 
      * @return
      *     possible object is
      *     {@link BigInteger }
-     *
+     *     
      */
     public BigInteger getQueueLength() {
         return queueLength;
@@ -131,11 +131,11 @@ public class AbnormalTraffic
 
     /**
      * Sets the value of the queueLength property.
-     *
+     * 
      * @param value
      *     allowed object is
      *     {@link BigInteger }
-     *
+     *     
      */
     public void setQueueLength(BigInteger value) {
         this.queueLength = value;
@@ -143,11 +143,11 @@ public class AbnormalTraffic
 
     /**
      * Gets the value of the relativeTrafficFlow property.
-     *
+     * 
      * @return
      *     possible object is
      *     {@link RelativeTrafficFlowEnum }
-     *
+     *     
      */
     public RelativeTrafficFlowEnum getRelativeTrafficFlow() {
         return relativeTrafficFlow;
@@ -155,11 +155,11 @@ public class AbnormalTraffic
 
     /**
      * Sets the value of the relativeTrafficFlow property.
-     *
+     * 
      * @param value
      *     allowed object is
      *     {@link RelativeTrafficFlowEnum }
-     *
+     *     
      */
     public void setRelativeTrafficFlow(RelativeTrafficFlowEnum value) {
         this.relativeTrafficFlow = value;
@@ -167,11 +167,11 @@ public class AbnormalTraffic
 
     /**
      * Gets the value of the trafficFlowCharacteristics property.
-     *
+     * 
      * @return
      *     possible object is
      *     {@link TrafficFlowCharacteristicsEnum }
-     *
+     *     
      */
     public TrafficFlowCharacteristicsEnum getTrafficFlowCharacteristics() {
         return trafficFlowCharacteristics;
@@ -179,11 +179,11 @@ public class AbnormalTraffic
 
     /**
      * Sets the value of the trafficFlowCharacteristics property.
-     *
+     * 
      * @param value
      *     allowed object is
      *     {@link TrafficFlowCharacteristicsEnum }
-     *
+     *     
      */
     public void setTrafficFlowCharacteristics(TrafficFlowCharacteristicsEnum value) {
         this.trafficFlowCharacteristics = value;
@@ -191,11 +191,11 @@ public class AbnormalTraffic
 
     /**
      * Gets the value of the trafficTrendType property.
-     *
+     * 
      * @return
      *     possible object is
      *     {@link TrafficTrendTypeEnum }
-     *
+     *     
      */
     public TrafficTrendTypeEnum getTrafficTrendType() {
         return trafficTrendType;
@@ -203,11 +203,11 @@ public class AbnormalTraffic
 
     /**
      * Sets the value of the trafficTrendType property.
-     *
+     * 
      * @param value
      *     allowed object is
      *     {@link TrafficTrendTypeEnum }
-     *
+     *     
      */
     public void setTrafficTrendType(TrafficTrendTypeEnum value) {
         this.trafficTrendType = value;
@@ -215,11 +215,11 @@ public class AbnormalTraffic
 
     /**
      * Gets the value of the abnormalTrafficExtension property.
-     *
+     * 
      * @return
      *     possible object is
      *     {@link ExtensionType }
-     *
+     *     
      */
     public ExtensionType getAbnormalTrafficExtension() {
         return abnormalTrafficExtension;
@@ -227,11 +227,11 @@ public class AbnormalTraffic
 
     /**
      * Sets the value of the abnormalTrafficExtension property.
-     *
+     * 
      * @param value
      *     allowed object is
      *     {@link ExtensionType }
-     *
+     *     
      */
     public void setAbnormalTrafficExtension(ExtensionType value) {
         this.abnormalTrafficExtension = value;

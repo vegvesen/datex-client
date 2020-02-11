@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="tpegLinearLocation" type="{http://datex2.eu/schema/2/2_0}TpegLinearLocation" minOccurs="0"/&gt;
  *         &lt;element name="alertCLinear" type="{http://datex2.eu/schema/2/2_0}AlertCLinear" minOccurs="0"/&gt;
  *         &lt;element name="linearWithinLinearElement" type="{http://datex2.eu/schema/2/2_0}LinearWithinLinearElement" minOccurs="0"/&gt;
- *         &lt;element name="linearExtension" type="{http://datex2.eu/schema/2/2_0}_ExtensionType" minOccurs="0"/&gt;
+ *         &lt;element name="linearExtension" type="{http://datex2.eu/schema/2/2_0}_LinearExtensionType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -47,7 +47,7 @@ public class Linear
     @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
     protected LinearWithinLinearElement linearWithinLinearElement;
     @XmlElement(namespace = "http://datex2.eu/schema/2/2_0")
-    protected ExtensionType linearExtension;
+    protected LinearExtensionType linearExtension;
 
     /**
      * Gets the value of the tpegLinearLocation property.
@@ -126,10 +126,10 @@ public class Linear
      * 
      * @return
      *     possible object is
-     *     {@link ExtensionType }
+     *     {@link LinearExtensionType }
      *     
      */
-    public ExtensionType getLinearExtension() {
+    public LinearExtensionType getLinearExtension() {
         return linearExtension;
     }
 
@@ -138,10 +138,10 @@ public class Linear
      * 
      * @param value
      *     allowed object is
-     *     {@link ExtensionType }
+     *     {@link LinearExtensionType }
      *     
      */
-    public void setLinearExtension(ExtensionType value) {
+    public void setLinearExtension(LinearExtensionType value) {
         this.linearExtension = value;
     }
 
