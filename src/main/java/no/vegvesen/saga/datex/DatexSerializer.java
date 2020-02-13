@@ -10,7 +10,7 @@ import java.io.InputStream;
 public class DatexSerializer {
     public D2LogicalModel deserialize(InputStream stream) throws SerializerException {
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(D2LogicalModel.class);
+            JAXBContext jaxbContext = JAXBContextFactory.createJAXBContext();
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
             JAXBElement<D2LogicalModel> element = (JAXBElement<D2LogicalModel>) unmarshaller.unmarshal(stream);
             return element.getValue();
