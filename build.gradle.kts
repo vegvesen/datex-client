@@ -21,7 +21,7 @@ val pomDeveloperName = "Safurudin Mahic"
 plugins {
     java
     `maven-publish`
-    id("com.jfrog.bintray") version "1.8.4"
+    id("com.github.breadmoirai.github-release") version("2.2.12")
 }
 
 java {
@@ -31,7 +31,6 @@ java {
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
@@ -41,6 +40,9 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
 }
 
+version = artifactVersion
+group = artifactGroup
+
 tasks.test {
     useJUnitPlatform()
     maxHeapSize = "1024m"
@@ -49,6 +51,12 @@ tasks.test {
 tasks.register<Jar>("sourcesJar") {
     archiveClassifier.set("sources")
     from(sourceSets.main.get().allJava)
+}
+
+githubRelease {
+    token(project.properties["GITHUB_PAT"]?.toString() ?: "")
+    owner("vegvesen")
+    repo("datex-client")
 }
 
 publishing {
@@ -80,33 +88,6 @@ publishing {
                     }
                 }
             }
-        }
-    }
-}
-
-bintray {
-    user = project.findProperty("bintrayUser").toString()
-    key = project.findProperty("bintrayKey").toString()
-    publish = true
-    setPublications("maven")
-
-    pkg.apply {
-        repo = "maven"
-        name = artifactName
-        userOrg = "vegvesen"
-        githubRepo = githubRepo
-        vcsUrl = pomScmUrl
-        description = pomDesc
-        setLicenses("MIT")
-        desc = description
-        websiteUrl = "https://vegvesen.no"
-        issueTrackerUrl = pomIssueUrl
-        githubReleaseNotesFile = githubReadme
-
-        version.apply {
-            name = artifactVersion
-            desc = pomDesc
-            vcsTag = artifactVersion
         }
     }
 }
