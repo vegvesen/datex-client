@@ -54,9 +54,10 @@ tasks.register<Jar>("sourcesJar") {
 }
 
 githubRelease {
-    token(project.properties["GITHUB_PAT"]?.toString() ?: "")
+    token { project.properties["GITHUB_PAT"]?.toString() ?: throw Exception("Missing GITHUB_PAT token!") }
     owner("vegvesen")
     repo("datex-client")
+    body(changelog())
 }
 
 publishing {
