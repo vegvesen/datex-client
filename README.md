@@ -69,6 +69,11 @@ dependencies {
 }
 ```
 
+## How to create new releases
+
+1. Bump the `artifactVersion` in `build.gradle.kts`
+1. Run `./gradlew githubRelease`
+
 ## How can I run the tests
 
 1. Clone repo
