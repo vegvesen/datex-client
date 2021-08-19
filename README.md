@@ -1,3 +1,5 @@
+# This repo will be deleted end of March 2022 . Further development is moved to https://github.com/svvsaga/datex-client
+
 # datex-client
 
 A simple serializer library which can deserialize Datex II publications from XML to JAXB POJOs.
